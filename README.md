@@ -3,7 +3,7 @@ My first Unity project
 
 This Game is like Pong but it is a bit different <br>
 First of all the ball is corona virus and it shouldn't hit you.<br>
-Whenever virus hits your health decreases.<br>
+Whenever virus hits your health decreases.<br><br>
 There are 3 game modes<br>
 1-) Human vs Human mode - You can play this mode with your friends. If you are an asocial sycopath like me you can control both of them <br> "Controls are W-S and UP-DOWN buttons"<br>
 2-) Human vs AI mode - There is a stupid AI and you can try to beat it.<br>
