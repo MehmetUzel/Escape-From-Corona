@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-   public void Load(int index)
+    bool paused = false;
+
+
+    public void Load(int index)
     {
         SceneManager.LoadScene(index);
     }
@@ -16,11 +19,30 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void Melt()
+    {
+        Time.timeScale = 1f;
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(0);
+            paused = togglePause();
+            //SceneManager.LoadScene(0);
+        }
+    }
+    bool togglePause()
+    {
+        if (Time.timeScale == 0f)
+        {
+            Time.timeScale = 1f;
+            return (false);
+        }
+        else
+        {
+            Time.timeScale = 0f;
+            return (true);
         }
     }
 }
